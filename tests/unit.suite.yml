@@ -10,3 +10,4 @@ modules:
     - Laravel5:
         environment_file: .env.testing
         cleanup: true
+        run_database_migrations: true
