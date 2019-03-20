@@ -1,6 +1,6 @@
 [![PHP >= 7+](https://img.shields.io/badge/php-%3E%3D%207-8892BF.svg?style=flat-square)](https://php.net/)
 
-[![Build Status](https://img.shields.io/travis/ShkrutDenis/demo-laravel/develop.svg?style=flat)](https://travis-ci.org/ShkrutDenis/demo-laravel?branch=develop)
+[![Build Status](https://img.shields.io/travis/ShkrutDenis/demo-laravel/master.svg?style=flat)](https://travis-ci.org/ShkrutDenis/demo-laravel.svg?branch=master)
 
 [![Coverage Status](https://img.shields.io/coveralls/ShkrutDenis/demo-laravel/develop.svg?style=flat)](https://coveralls.io/r/ShkrutDenis/demo-laravel?branch=develop)
 

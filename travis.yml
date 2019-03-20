@@ -7,9 +7,9 @@ php:
 matrix:
   allow_failures:
     - php: master
-env:
-  global:
-    - secure: "QKyI/QO6H6pFE04Iz/4IcSuttMdY3o85mD2BTNV2Y2SeSPxLfuukqPrxjANrTc4GfI1v7/bZM43uMl3aRa76+HRZ83ZsXR8uv1VZUgNHYuoq7jdZb18BitM36h0LbHzTbYetJLiYg7l3mnbAezTXPXHfpNIWvZcuyZzatyF/lng="
+#env:
+#  global:
+#    - secure: "QKyI/QO6H6pFE04Iz/4IcSuttMdY3o85mD2BTNV2Y2SeSPxLfuukqPrxjANrTc4GfI1v7/bZM43uMl3aRa76+HRZ83ZsXR8uv1VZUgNHYuoq7jdZb18BitM36h0LbHzTbYetJLiYg7l3mnbAezTXPXHfpNIWvZcuyZzatyF/lng="
 before_install:
   # Prefer IPv4 over IPv6
   - sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
@@ -31,9 +31,9 @@ script:
   - php vendor/bin/codecept run --coverage --coverage-xml
 after_success:
   # Upload coverage report
-  - php vendor/bin/php-coveralls -v
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover tests/_output/coverage.xml
+#  - php vendor/bin/php-coveralls -v
+#  - wget https://scrutinizer-ci.com/ocular.phar
+#  - php ocular.phar code-coverage:upload --format=php-clover tests/_output/coverage.xml
 #notifications:
 #  email: false
 #  webhooks:
